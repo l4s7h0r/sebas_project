@@ -78,5 +78,5 @@
     "wrangler": "^3.34.0"
   }
   ,
-  "packageManager": "npm@9"
+  "packageManager": "npm@9.8.1"
 }
