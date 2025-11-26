@@ -1,1 +1,20 @@
 node_modules
+
+# Next.js build outputs
+.next
+.vercel
+out
+
+# Cloudflare / Wrangler
+.wrangler
+
+# Logs and env
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+
+# Lockfiles (optional to ignore if using pnpm/yarn elsewhere)
+package-lock.json

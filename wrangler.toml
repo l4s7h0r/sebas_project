@@ -1,0 +1,11 @@
+name = "sebas_project"
+main = "./.cloudflare/worker.js"
+compatibility_date = "2025-11-26"
+account_id = "" # <-- Rellena con tu ACCOUNT_ID de Cloudflare
+workers_dev = true
+
+[site]
+bucket = "./out"
+entry-point = "workers-site"
+
+# Si usas Pages en lugar de Workers, configura desde el dashboard de Cloudflare Pages

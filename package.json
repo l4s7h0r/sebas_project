@@ -6,7 +6,12 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "eslint .",
-    "start": "next start"
+    "start": "next start",
+    "export": "next export -o out",
+    "cf:build": "npx @cloudflare/next-on-pages@latest",
+    "cf:deploy:pages": "npx wrangler pages publish .vercel/output/static --project-name=sebas_project || echo 'Publica .vercel/output/static desde el dashboard si prefieres'",
+    "cf:deploy:pages:static": "npx wrangler pages publish out --project-name=sebas_project || echo 'Genera la carpeta out con `npm run export` antes'",
+    "cf:deploy:worker": "npx wrangler publish || echo 'Rellena account_id en wrangler.toml y ejecuta de nuevo'"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -68,6 +73,10 @@
     "postcss": "^8.5",
     "tailwindcss": "^4.1.9",
     "tw-animate-css": "1.3.3",
-    "typescript": "^5"
+    "typescript": "^5",
+    "@cloudflare/next-on-pages": "latest",
+    "wrangler": "^3.34.0"
   }
+  ,
+  "packageManager": "npm@9"
 }
