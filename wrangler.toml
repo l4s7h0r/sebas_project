@@ -1,4 +1,4 @@
-name = "sebas_project"
+name = "sebas-pruebas"
 main = "./.cloudflare/worker.js"
 compatibility_date = "2025-11-26"
 account_id = "" # <-- Rellena con tu ACCOUNT_ID de Cloudflare
