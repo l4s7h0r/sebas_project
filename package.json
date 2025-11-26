@@ -7,7 +7,7 @@
     "dev": "next dev",
     "lint": "eslint .",
     "start": "next start",
-    "export": "next export -o out",
+    "export": "next export --outdir out",
     "cf:build": "npx @cloudflare/next-on-pages@latest",
     "cf:deploy:pages": "npx wrangler pages publish .vercel/output/static --project-name=sebas_project || echo 'Publica .vercel/output/static desde el dashboard si prefieres'",
     "cf:deploy:pages:static": "npx wrangler pages publish out --project-name=sebas_project || echo 'Genera la carpeta out con `npm run export` antes'",
